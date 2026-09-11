@@ -6,14 +6,14 @@ const dataSuhu = [
     30,//celcius
     86,//fahrenheit
 
-    function () {
-        return(dataSuhu[0] * 9/5) + 32;
+    function (Suhu) {
+        return(Suhu * 9/5) + 32;
     },
 
-    function () {
-        return(dataSuhu[1] - 32) * 5/9;
+    function (Suhu) {
+        return(Suhu - 32) * 5/9;
     }
 ];
 
-console.log(dataSuhu[2]());
-console.log(dataSuhu[3]());
+console.log(dataSuhu[2](0));
+console.log(dataSuhu[3](1));
